@@ -251,9 +251,9 @@ movedata MOVE_CUT, "Cut"
     battleeffect 0
     pss SPLIT_PHYSICAL
     basepower 50
-    type TYPE_NORMAL
-    accuracy 95
-    pp 30
+    type TYPE_STEEL
+    accuracy 100
+    pp 25
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0

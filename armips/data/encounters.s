@@ -16,6 +16,7 @@ oldrodrate 25
 goodrodrate 50
 superrodrate 75
 walklevels 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+// probabilities:  20, 20, 10, 10, 10, 10, 5, 5, 4, 4, 1, 1
 
 // morning encounter slots
 pokemon SPECIES_NONE
