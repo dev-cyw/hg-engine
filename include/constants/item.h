@@ -846,6 +846,8 @@
 #define ITEM_NAIVE_MINT         (ITEM_PIXIE_PLATE + 206)
 #define ITEM_SERIOUS_MINT       (ITEM_PIXIE_PLATE + 207)
 
+#define ITEM_RARE_CANDY_BAG     (ITEM_PIXIE_PLATE + 208)
+
 #define NUM_MEGA_STONES 48 // includes the pixie plate
 
 #define IS_ITEM_TERRAIN_SEED(item) (item >= ITEM_ELECTRIC_SEED && item <= ITEM_PSYCHIC_SEED)
