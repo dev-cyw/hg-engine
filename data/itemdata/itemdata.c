@@ -49998,7 +49998,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RARE_CANDY_BAG - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 4800,
+    .price = 0,
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -50006,9 +50006,9 @@ const ITEMDATA __data[] =
     .flingPower = 30,
     .naturalGiftPower = 0,
     .naturalGiftType = 31,
-    .prevent_toss = FALSE,
+    .prevent_toss = TRUE,
     .selectable = FALSE,
-    .fieldPocket = POCKET_MEDICINE,
+    .fieldPocket = POCKET_KEY_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
     .fieldUseFunc = 1,
     .battleUseFunc = 0,
