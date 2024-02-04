@@ -791,3 +791,4 @@ Jolly Mint
 Naive Mint
 Serious Mint
 Infinite Candy
+Restore Kit

@@ -845,8 +845,9 @@
 #define ITEM_JOLLY_MINT         (ITEM_PIXIE_PLATE + 205)
 #define ITEM_NAIVE_MINT         (ITEM_PIXIE_PLATE + 206)
 #define ITEM_SERIOUS_MINT       (ITEM_PIXIE_PLATE + 207)
-
-#define ITEM_RARE_CANDY_BAG     (ITEM_PIXIE_PLATE + 208)
+//Custom Items
+#define ITEM_INFINITE_CANDY     (ITEM_PIXIE_PLATE + 208)
+#define ITEM_RESTORE_KIT        (ITEM_PIXIE_PLATE + 209)
 
 #define NUM_MEGA_STONES 48 // includes the pixie plate
 
