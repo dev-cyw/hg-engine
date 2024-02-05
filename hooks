@@ -416,3 +416,10 @@ arm9 sub_02074128 02074128 1
 # ALLOW_SAVE_CHANGES
 
 0002 SetFixedWildEncounter_hook 022480C4 5
+
+# pc anywhere
+0001 ClearOverworldRequestFlags 021E6880 1
+# hook from where y button is checked
+0001 SetOverworldRequestFlags_hook 021E6982 0
+# hook from near beginning of function
+0001 CheckOverworldRequestFlags_hook 021E6AF6 3
