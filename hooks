@@ -417,9 +417,14 @@ arm9 sub_02074128 02074128 1
 
 0002 SetFixedWildEncounter_hook 022480C4 5
 
+<<<<<<< HEAD
 # pc anywhere
 0001 ClearOverworldRequestFlags 021E6880 1
 # hook from where y button is checked
 0001 SetOverworldRequestFlags_hook 021E6982 0
 # hook from near beginning of function
 0001 CheckOverworldRequestFlags_hook 021E6AF6 3
+=======
+# allow for crazy shiny odds calcs
+arm9 CalcShininessByOtIdAndPersonality 02070068 2
+>>>>>>> upstream/main
