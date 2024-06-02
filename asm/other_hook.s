@@ -517,7 +517,7 @@ sub     r1, r2, #3
 ldrsb   r1, [r5, r1] // current page
 cmp     r1, #1
 bne     Summary_Check_RButton
-mov     r1, #1
+mov     r1, #2
 bl      Summary_ChangeStatScreenState
 mov     r0, #0x5E
 lsl     r0, #4
