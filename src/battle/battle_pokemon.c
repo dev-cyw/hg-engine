@@ -94,7 +94,7 @@ u8 TypeEffectivenessTable[][3] =
     { TYPE_BUG, TYPE_STEEL, 0x05 },
 
 #if FAIRY_TYPE_IMPLEMENTED == 1
-    { TYPE_BUG, TYPE_FAIRY, 0x05 },
+    { TYPE_BUG, TYPE_FAIRY, 0x14 },
 #endif
 
     { TYPE_BUG, TYPE_FIRE, 0x05 },

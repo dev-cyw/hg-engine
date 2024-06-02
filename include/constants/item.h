@@ -855,6 +855,7 @@
 
 // Custom Items
 #define ITEM_INFINITE_CANDY     (ITEM_PIXIE_PLATE + 208)
+#define ITEM_RESTORE_KIT        (ITEM_PIXIE_PLATE + 209)
 
 #define NUM_MEGA_STONES 48 // includes the pixie plate
 
