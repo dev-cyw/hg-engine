@@ -50060,9 +50060,10 @@ const ITEMDATA __data[] =
         .friendship_mod_hi_param =  2,
     },
 },
+
 [ITEM_RESTORE_KIT - NUM_UNKNOWN_SLOTS_EXPLORER_KIT] =
 {
-    .price = 3000,
+    .price = 0,
     .holdEffect = 0,
     .holdEffectParam = 255,
     .pluckEffect = 0,
@@ -50075,7 +50076,7 @@ const ITEMDATA __data[] =
     .fieldPocket = POCKET_KEY_ITEMS,
     .battlePocket = BATTLE_POCKET_NONE,
     .fieldUseFunc = 1,
-    .battleUseFunc = 2,
+    .battleUseFunc = 0,
     .partyUse = 1,
     .partyUseParam = {
         .slp_heal = TRUE,
