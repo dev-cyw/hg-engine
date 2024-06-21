@@ -798,3 +798,5 @@ CornerstoneMask
 Wellspring Mask
 HearthflameMask
 Metal Alloy
+Infinite Candy
+Restore Kit

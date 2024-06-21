@@ -16689,7 +16689,7 @@ trainerdata 494, "Georgina"
     endparty
 
 trainerdata 495, "Boy"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
+    trainermontype TRAINER_DATA_TYPE_ITEMS
     trainerclass CLASS_PASSERBY
     nummons 1
     item ITEM_NONE
@@ -16705,12 +16705,13 @@ trainerdata 495, "Boy"
         ivs 0
         abilityslot 0
         level 5
+        item ITEM_ORAN_BERRY
         pokemon SPECIES_CHIKORITA
         ballseal 0
     endparty
 
 trainerdata 496, "Boy"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
+    trainermontype TRAINER_DATA_TYPE_ITEMS
     trainerclass CLASS_PASSERBY
     nummons 1
     item ITEM_NONE
@@ -16726,12 +16727,13 @@ trainerdata 496, "Boy"
         ivs 0
         abilityslot 0
         level 5
+        item ITEM_ORAN_BERRY
         pokemon SPECIES_CYNDAQUIL
         ballseal 0
     endparty
 
 trainerdata 497, "Boy"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
+    trainermontype TRAINER_DATA_TYPE_ITEMS
     trainerclass CLASS_PASSERBY
     nummons 1
     item ITEM_NONE
@@ -16747,6 +16749,7 @@ trainerdata 497, "Boy"
         ivs 0
         abilityslot 0
         level 5
+        item ITEM_ORAN_BERRY
         pokemon SPECIES_TOTODILE
         ballseal 0
     endparty

@@ -798,3 +798,5 @@ a {COLOR 255}CornerstoneMask{COLOR 0}
 a {COLOR 255}Wellspring Mask{COLOR 0}
 a {COLOR 255}HearthflameMask{COLOR 0}
 a {COLOR 255}Metal Alloy{COLOR 0}
+a {COLOR 255}Infinite Candy{COLOR 0}
+a {COLOR 255}Restore Kit{COLOR 0}
