@@ -8,7 +8,6 @@
 
 .include "asm/include/items.inc"
 
-
 // text archive to grab from: 040.txt
 
 .create "build/a012/2_003", 0
@@ -323,7 +322,7 @@ _0445:
     setvar VAR_SPECIAL_x8004, 1
     goto _01AA
 
-.align 4
+.align 2
 
 _0454:
     step 100, 1
@@ -337,6 +336,7 @@ _0460:
 _0468:
     step 104, 1
     step_end
+
 
 
 scr_seq_0003_069:
@@ -763,9 +763,11 @@ scr_seq_0003_010:
     goto _0A2E
 
 _0A18:
+    goto_if_set 0x18F, _skipPCOnOff
     scrcmd_500 90
     scrcmd_501 90
     scrcmd_308 90
+_skipPCOnOff:
     return
 
 _0A23:
@@ -999,7 +1001,10 @@ _0DE7:
 _0DF0:
     closemsg
     play_se SEQ_SE_DP_PC_LOGOFF
+    goto_if_set 0x18F, _skipPCOff
     call _0A23
+_skipPCOff:
+    clearflag 0x18F
     touchscreen_menu_show
     releaseall
     end
@@ -1013,7 +1018,9 @@ _0E02:
 _0E16:
     fade_screen 6, 1, 0, RGB_BLACK
     wait_fade
+    goto_if_set 0x18F, _skipPCTransition
     scrcmd_309 90
+_skipPCTransition:
     return
 
 scr_seq_0003_014:
@@ -1178,7 +1185,7 @@ _104A:
     setvar VAR_SPECIAL_x8007, 3
     return
 
-.align 4
+.align 2
 
 _1054:
     step 0, 1
