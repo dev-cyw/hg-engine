@@ -86,3 +86,6 @@ tools/swav2swar.exe
 
 *.ml*
 /.vscode
+
+*.gbapal
+*.4bpp
