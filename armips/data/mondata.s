@@ -9823,7 +9823,7 @@ mondata SPECIES_ELECTIVIRE, "Electivire"
 
 mondata SPECIES_MAGMORTAR, "Magmortar"
     basestats 75, 95, 67, 83, 125, 95
-    types TYPE_FIRE, TYPE_DARK
+    types TYPE_FIRE, TYPE_POISON
     catchrate 30
     baseexp 0 // defined in baseexp.s
     evyields 0, 0, 0, 0, 3, 0

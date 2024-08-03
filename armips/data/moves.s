@@ -5922,7 +5922,7 @@ movedata MOVE_U_TURN, "U-turn"
     pp 20
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 0
+    priority 1
     flags FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x10
     contesttype CONTEST_CUTE
