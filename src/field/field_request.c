@@ -28,6 +28,7 @@ void ClearOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req)
     req->DebugKeyPush = 0;
 
     req->OpenPCCheck  = 0; // new:  check if pc should be opened
+    req->TimeChange=0;
 
     req->Site = 0xFF;
     req->PushSite = 0xFF;
@@ -44,6 +45,9 @@ void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
     if (trg & PAD_BUTTON_R) {
         req->OpenPCCheck = TRUE;
     }
+    if(trg & PAD_BUTTON_L){
+        req->TimeChange = TRUE;
+    }
 }
 
 /**
@@ -53,12 +57,15 @@ void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
  */
 void CheckOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, FieldSystem *fsys)
 {
-    if (req->OpenPCCheck) {
-        if (CheckScriptFlag(397)) {
-            EventSet_Script(fsys, 2072, NULL); // set up script 2072 to show a cannot use PC message if flag 397 is set
-        } else {
-            SetScriptFlag(399); // some random flag that should be set by script 2010 (file 3 script 10)
-            EventSet_Script(fsys, 2010, NULL); // set up script 2075
-        }
+
+    if (req->OpenPCCheck && CheckScriptFlag(397)) {
+        EventSet_Script(fsys, 2072, NULL); // set up script 2072 to show a cannot use PC message if flag 397 is set
+    } else {
+        SetScriptFlag(399); // some random flag that should be set by script 2010 (file 3 script 10)
+        EventSet_Script(fsys, 2010, NULL); // set up script 2075
+    }
+
+    if(req->TimeChange){
+        EventSet_Script(fsys, 2073, NULL);
     }
 }

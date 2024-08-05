@@ -85,6 +85,8 @@ scrdef scr_seq_0003_068
 scrdef scr_seq_0003_069
 scrdef scr_seq_0003_070
 scrdef scr_seq_0003_071
+scrdef scr_seq_0003_072_porta_pc_message
+scrdef scr_seq_0003_073_time_change
 scrdef_end
 
 scr_seq_0003_002:
@@ -1719,8 +1721,48 @@ scr_seq_0003_064:
     releaseall
     end
 
+scr_seq_0003_072_porta_pc_message:
+    lockall
+    checkflag FLAG_GOT_POKEGEAR
+    goto_if_ne pc_not_activated
+    buffer_players_name 0
+    npc_msg 117
+    closemsg
+    releaseall
+    end
 
+pc_not_activated:
+    releaseall
+    end
 
+scr_seq_0003_073_time_change:
+    play_se SEQ_SE_DP_SELECT
+    lockall
+    OpenTouchScreen
+    MultiTouchLocalText 1, 1, 0, 1, VAR_SPECIAL_RESULT
+   	CreateMultiTouchBox 118, 255, 0
+	CreateMultiTouchBox 119, 255, 1
+	CreateMultiTouchBox 120, 255, 2
+	CloseMultiTouch
+	CloseTouchScreen
+    switch VAR_SPECIAL_RESULT
+    case 0, morn
+    case 1, day
+    case 2, night
+    end
 
+morn:
+    setvar VAR_UNK_4032, 1
+    goto time_change_end
+day:
+    setvar VAR_UNK_4032, 2
+    goto time_change_end
+night:
+    setvar VAR_UNK_4032, 3
+    goto time_change_end
+
+time_change_end:
+    releaseall
+    end
 
 .close
