@@ -1722,20 +1722,18 @@ scr_seq_0003_064:
     end
 
 scr_seq_0003_072_porta_pc_message:
-    lockall
     checkflag FLAG_GOT_POKEGEAR
-    goto_if_ne pc_not_activated
+    goto_if_ne not_activated
+    lockall
     buffer_players_name 0
     npc_msg 117
     closemsg
     releaseall
     end
 
-pc_not_activated:
-    releaseall
-    end
-
 scr_seq_0003_073_time_change:
+    checkflag FLAG_GOT_POKEGEAR
+    goto_if_ne not_activated
     play_se SEQ_SE_DP_SELECT
     lockall
     OpenTouchScreen
@@ -1749,6 +1747,9 @@ scr_seq_0003_073_time_change:
     case 0, morn
     case 1, day
     case 2, night
+    end
+
+not_activated:
     end
 
 morn:
