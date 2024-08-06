@@ -4268,7 +4268,6 @@ levelup SPECIES_POLITOED
 
 levelup SPECIES_HOPPIP
     learnset MOVE_ABSORB, 1
-    learnset MOVE_SPLASH, 1
     learnset MOVE_SYNTHESIS, 4
     learnset MOVE_TAIL_WHIP, 6
     learnset MOVE_TACKLE, 8

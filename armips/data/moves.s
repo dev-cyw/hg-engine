@@ -2410,11 +2410,11 @@ movedata MOVE_PSYWAVE, "Psywave"
     movedescription MOVE_PSYWAVE, "The foe is attacked\nwith an odd, hot\nenergy wave.\nThe attack varies in\nintensity."
 
 movedata MOVE_SPLASH, "Splash"
-    battleeffect MOVE_EFFECT_DO_NOTHING
-    pss SPLIT_STATUS
-    basepower 0
+    battleeffect MOVE_EFFECT_HIT
+    pss SPLIT_PHYSICAL
+    basepower 15
     type TYPE_NORMAL
-    accuracy 0
+    accuracy 100
     pp 40
     effectchance 0
     target MOVE_TARGET_USER
