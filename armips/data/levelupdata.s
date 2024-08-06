@@ -12859,21 +12859,23 @@ levelup SPECIES_LILLIGANT
 
 levelup SPECIES_BASCULIN
     learnset MOVE_TAIL_WHIP, 1
+    learnset MOVE_TACKLE, 1
     learnset MOVE_WATER_GUN, 1
-    learnset MOVE_TACKLE, 4
-    learnset MOVE_FLAIL, 8
-    learnset MOVE_AQUA_JET, 12
-    learnset MOVE_BITE, 16
-    learnset MOVE_SCARY_FACE, 20
-    learnset MOVE_HEADBUTT, 24
-    learnset MOVE_SOAK, 28
-    learnset MOVE_CRUNCH, 32
-    learnset MOVE_TAKE_DOWN, 36
-    learnset MOVE_UPROAR, 40
-    learnset MOVE_WAVE_CRASH, 44
-    learnset MOVE_THRASH, 48
-    learnset MOVE_DOUBLE_EDGE, 52
-    learnset MOVE_HEAD_SMASH, 56
+    learnset MOVE_UPROAR, 3
+    learnset MOVE_HEADBUTT, 5
+    learnset MOVE_BITE, 7
+    learnset MOVE_AQUA_JET, 9
+    learnset MOVE_CHIP_AWAY, 11
+    learnset MOVE_TAKE_DOWN, 14
+    learnset MOVE_CRUNCH, 17
+    learnset MOVE_AQUA_TAIL, 20
+    learnset MOVE_SOAK, 23
+    learnset MOVE_DOUBLE_EDGE, 26
+    learnset MOVE_SCARY_FACE, 30
+    learnset MOVE_FLAIL, 34
+    learnset MOVE_FINAL_GAMBIT, 38
+    learnset MOVE_THRASH, 42
+    learnset MOVE_HEAD_SMASH, 46
     terminatelearnset
 
 
@@ -25649,7 +25651,7 @@ levelup SPECIES_PALKIA_ORIGIN
     terminatelearnset
 
 
-levelup SPECIES_BASCULIN_RED_STRIPED
+levelup SPECIES_BASCULIN_BLUE_STRIPED
     learnset MOVE_TAIL_WHIP, 1
     learnset MOVE_TACKLE, 1
     learnset MOVE_WATER_GUN, 1
@@ -25671,25 +25673,23 @@ levelup SPECIES_BASCULIN_RED_STRIPED
     terminatelearnset
 
 
-levelup SPECIES_BASCULIN_BLUE_STRIPED
+levelup SPECIES_BASCULIN_WHITE_STRIPED
     learnset MOVE_TAIL_WHIP, 1
-    learnset MOVE_TACKLE, 1
     learnset MOVE_WATER_GUN, 1
-    learnset MOVE_UPROAR, 3
-    learnset MOVE_HEADBUTT, 5
-    learnset MOVE_BITE, 7
-    learnset MOVE_AQUA_JET, 9
-    learnset MOVE_CHIP_AWAY, 11
-    learnset MOVE_TAKE_DOWN, 14
-    learnset MOVE_CRUNCH, 17
-    learnset MOVE_AQUA_TAIL, 20
-    learnset MOVE_SOAK, 23
-    learnset MOVE_DOUBLE_EDGE, 26
-    learnset MOVE_SCARY_FACE, 30
-    learnset MOVE_FLAIL, 34
-    learnset MOVE_FINAL_GAMBIT, 38
-    learnset MOVE_THRASH, 42
-    learnset MOVE_HEAD_SMASH, 46
+    learnset MOVE_TACKLE, 4
+    learnset MOVE_FLAIL, 8
+    learnset MOVE_AQUA_JET, 12
+    learnset MOVE_BITE, 16
+    learnset MOVE_SCARY_FACE, 20
+    learnset MOVE_HEADBUTT, 24
+    learnset MOVE_SOAK, 28
+    learnset MOVE_CRUNCH, 32
+    learnset MOVE_TAKE_DOWN, 36
+    learnset MOVE_UPROAR, 40
+    learnset MOVE_WAVE_CRASH, 44
+    learnset MOVE_THRASH, 48
+    learnset MOVE_DOUBLE_EDGE, 52
+    learnset MOVE_HEAD_SMASH, 56
     terminatelearnset
 
 
