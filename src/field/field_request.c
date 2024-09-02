@@ -45,9 +45,11 @@ void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
     if (trg & PAD_BUTTON_R) {
         req->OpenPCCheck = TRUE;
     }
+    /*
     if(trg & PAD_BUTTON_L){
         req->TimeChange = TRUE;
     }
+    */
 }
 
 /**
