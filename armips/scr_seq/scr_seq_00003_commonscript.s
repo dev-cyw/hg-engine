@@ -1788,4 +1788,22 @@ time_change_end:
     releaseall
     end
 
+    scr_seq_0003_074_repels:
+        play_se SEQ_SE_DP_SELECT
+        lockall
+        npc_msg 118
+        yesno VAR_SPECIAL_RESULT
+        compare VAR_SPECIAL_RESULT, 1
+        goto_if_eq scr_seq_0003_072_end
+        QueueNewRepel
+        PlayFanfare SEQ_SE_DP_CARD2
+        buffer_players_name 0
+        buffer_item_name 1, VAR_SPECIAL_RESULT
+        npc_msg 119
+        wait_button_or_walk_away
+    scr_seq_0003_072_end:
+        closemsg
+        releaseall
+        end
+
 .close

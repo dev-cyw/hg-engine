@@ -21,7 +21,7 @@ bool32 PlayerStepEvent_RepelCounterDecrement(SaveData *saveData, FieldSystem *fi
             BAG_DATA *bag = Sav2_Bag_get(saveData);
             u16 currentRepel = Repel_GetMostRecent();
             if (Bag_HasItem(bag, currentRepel, 1, HEAPID_WORLD)) {
-                EventSet_Script(fieldSystem, 2072, NULL);
+                EventSet_Script(fieldSystem, 2074, NULL);
             } else {
                 EventSet_Script(fieldSystem, 2022, NULL);
             }
