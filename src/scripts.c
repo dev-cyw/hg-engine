@@ -3,6 +3,13 @@
 #include "../include/constants/item.h"
 #include "../include/bag.h"
 #include "../include/battle.h"
+#include "../include/repel.h"
+#include "../include/constants/file.h"
+
+#define SCRIPT_NEW_CMD_REPEL_USE    4
+
+#define SCRIPT_NEW_CMD_MAX          256
+
 
 // script command 0xD0, DummyTextTrap/scrcmd_208
 u32 ScrCmd_Custom_Scripts(SCRIPTCONTEXT *ctx)
@@ -84,6 +91,13 @@ u32 ScrCmd_Custom_Scripts(SCRIPTCONTEXT *ctx)
 
             break;
         }
+        case SCRIPT_NEW_CMD_REPEL_USE:;
+#ifdef IMPLEMENT_REUSABLE_REPELS
+            u16 most_recent_repel = Repel_GetMostRecent();
+            SetScriptVar(arg0, most_recent_repel);
+            Repel_Use(most_recent_repel, HEAPID_MAIN_HEAP);
+#endif
+            break;
     }
     return 0;
 }
