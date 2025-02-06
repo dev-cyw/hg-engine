@@ -28,7 +28,7 @@ DEBUG_NEEDS_TESTING equ 0
 LEARNSET_TOTAL_MOVES equ 41 // 40+terminate - currently driven by gallade
 
 // BATTLE_MODE_FORCE_SET defines whether or not players will be able to switch out mons when the opponent sends out their next mon. The player will be able to choose themselves like normal if the following is 0, 1 if the player will be forced to use "set"
-BATTLE_MODE_FORCE_SET equ 0
+BATTLE_MODE_FORCE_SET equ 1
 
 // ALWAYS_HAVE_NATIONAL_DEX defines whether or not the player will always have the national dex unlocked.
 ALWAYS_HAVE_NATIONAL_DEX equ 0
@@ -40,7 +40,7 @@ ALWAYS_UNCAPPED_FRAME_RATE equ 0
 BATTLES_UNCAPPED_FRAME_RATE equ 0
 
 // FAST_TEXT_PRINTING will make the text print quickly, almost instantly
-FAST_TEXT_PRINTING equ 0
+FAST_TEXT_PRINTING equ 1
 
 // REUSABLE_TMS will make TMs infinite and hide the quantity number.
 REUSABLE_TMS equ 1
